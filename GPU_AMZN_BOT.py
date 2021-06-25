@@ -17,11 +17,11 @@ check = False
 driver.find_element_by_id( "nav-link-accountList" ).click()
 
 email = driver.find_element_by_id( "ap_email" )
-email.send_keys( "colepjohnston1@gmail.com" )
+email.send_keys( "username" )
 driver.find_element_by_id( "continue" ).click()
 
 password = driver.find_element_by_id( "ap_password" )
-password.send_keys( "Patricklynne1" )
+password.send_keys( "password" )
 driver.find_element_by_id( "signInSubmit" ).click()
 
 time.sleep(10)
