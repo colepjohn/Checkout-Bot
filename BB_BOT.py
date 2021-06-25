@@ -40,9 +40,9 @@ except:
 time.sleep(2)
 
 email = driver.find_element_by_name( "fld-e" )
-email.send_keys( "colepjohnston1@gmail.com" )
+email.send_keys( "username" )
 password = driver.find_element_by_name( "fld-p1" )
-password.send_keys( "Calilynne99" )
+password.send_keys( "password" )
 password.send_keys( Keys.RETURN )
 
 time.sleep(2)
@@ -64,15 +64,15 @@ try:
     Fname = WebDriverWait( driver, 10 ).until(
         EC.presence_of_element_located( ( By.ID, "payment.billingAddress.firstName" ) )
     )
-    Fname.send_keys( "Cole" )
+    Fname.send_keys( "first_name" )
     Lname = WebDriverWait( driver, 10 ).until(
         EC.presence_of_element_located( ( By.ID, "payment.billingAddress.lastName" ) )
     )
-    Lname.send_keys( "Johnston" )
+    Lname.send_keys( "last_name" )
     Address = WebDriverWait( driver, 10 ).until(
         EC.presence_of_element_located( ( By.ID, "payment.billingAddress.street" ) )
     )
-    Address.send_keys( "1730 Woods Lane, Denver NC" )
+    Address.send_keys( "address" )
     Address.send_keys( Keys.ARROW_DOWN )
     Address.send_keys( Keys.RETURN )
     time.sleep(1)
